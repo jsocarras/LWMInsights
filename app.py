@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error
+# from sklearn.linear_model import LinearRegression
+# from sklearn.model_selection import train_test_split
+# from sklearn.metrics import mean_squared_error
 
 # Load your dataframe
 df = pd.read_csv('data.csv')
@@ -39,21 +39,22 @@ X = df[features]
 y = df['Units Sold']
 
 # Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Train the model
-model = LinearRegression()
-model.fit(X_train, y_train)
+# model = LinearRegression()
+# model.fit(X_train, y_train)
 
 # Make predictions and calculate the error
-y_pred = model.predict(X_test)
-error = mean_squared_error(y_test, y_pred)
+# y_pred = model.predict(X_test)
+# error = mean_squared_error(y_test, y_pred)
 
 st.header('Predictive Analytics')
-st.write(f'Mean Squared Error of the model is: {error}')
+st.write("Coming soon!")
+# st.write(f'Mean Squared Error of the model is: {error}')
 
 # Add predicted sales to the dataframe
-df['Predicted Units Sold'] = model.predict(df[features])
+# df['Predicted Units Sold'] = model.predict(df[features])
 
 # Display a table of actual vs predicted sales
-st.dataframe(df[['Brand', 'Product Model', 'Units Sold', 'Predicted Units Sold']])
+# st.dataframe(df[['Brand', 'Product Model', 'Units Sold', 'Predicted Units Sold']])

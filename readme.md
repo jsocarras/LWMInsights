@@ -2,7 +2,7 @@
 
 LWM Insights is a Streamlit-based web application that enables washing machine manufacturers and retailers to understand and visualize market trends and sales predictions. This tool provides descriptive, predictive, and prescriptive analytics for sales data, including features such as brand, product model, size, capacity, and efficiency, among others.
 
-![App Preview](./images/preview.png)   <!-- Insert app preview image path -->
+App Demo: https://jsocarras-lwminsights-app-u2dqf9.streamlit.app/
 
 ## Features
 * Filters to refine and customize data views
